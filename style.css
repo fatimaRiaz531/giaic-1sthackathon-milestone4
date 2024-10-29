@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+#form-area,
+#output {
+    background-image: url(/image/pumpkin.jpg);
+    background-position: center;
+    background-color: #88e90a05;
+    margin: 20px;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #333;
+   
+
+.mainHeading {
+    text-transform: uppercase;
+    font-size: 200%; 
+    font-weight: bolder;
+    color: #94ed05;
+    margin: 15px 0;
+}
+
+.qSec {
+    color: #00aeff;
+    text-shadow: 1px 1px 2px #33333333;
+    margin: 10px 0;
+}
+
+#questions {
+    margin: 10px 0;
+}
+
+input {
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 5px;
+    border-radius: 10px;
+    border: 1px solid #3333334f;
+    margin: 5px 0;
+    text-transform: lowercase;
+}
+
+#submitButton,
+#editBtn {
+    border: none;
+    background-color: #daad31;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: medium;
+    transition: ease-in-out 0.2s;
+    box-shadow: 1px 1px 5px #3333333a;
+}
+
+#submitButton:hover,
+#editBtn:hover {
+    background-color: #f7a00a;
+    transform: scale(1.05);
+}
+
+#photo {
+    background-color: white;
+    text-transform: capitalize;
+    transition: ease-in-out 0.2s;
+}
+
+#photo:hover {
+    background-color: #00aeff18;
+}
+
+.outputImage {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #0e181c;
+    box-shadow: 0px 0px 5px #5c8ca3;
+    margin: 15px 0;
+}
+
+#outputName {
+    font-size: large;
+}
+
+#outputEmail {
+    text-transform: lowercase;
+    margin: 0 0 5px 0;
+}
+
+@media (min-width: 768px) {
+    #form-area,
+    #output {
+        margin: 40px auto;
+        padding: 20px 30px;
+        max-width: 600px;
+    }
+
+    .mainHeading {
+        font-size: 250%; 
+    }
+
+    .outputImage {
+        width: 180px;
+        height: 180px;
+    }
+
+    input {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #form-area,
+    #output {
+        margin: 90px auto;
+        padding: 30px 50px;
+        max-width: 800px;
+    }
+
+    .mainHeading {
+        font-size: 300%;
+    }
+
+    .outputImage {
+        width: 200px;
+        height: 200px;
+    }
+}
+}

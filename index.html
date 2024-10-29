@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-area">
+        <p class="mainHeading">Resume Builder</p>
+
+        <h2 class="qSec">personal information</h2>
+        <div id="questions">
+            <h3>enter your name:</h3> 
+            <input type="text" id="name" placeholder="e.g. Fatima">
+
+            <h3>enter your email:</h3>
+            <input type="email" id="email" placeholder="e.g. fati***22@****.com">
+
+            <h3>enter your phone no:</h3>
+            <input type="tel" id="phone" placeholder="e.g. +923**-*******">
+
+            <h3>upload you photo:</h3>
+            <input type="file" id="photo" accept="/image*">
+        </div>
+
+        <h2 class="qSec">Education</h2>
+        <div id="questions">
+        <h3>enter your institute:</h3>
+            <input type="text" id="school" placeholder="e.g. Britsh Cambridge School">
+            <h3>enter your degree:</h3>
+            <input type="text" id="degree" placeholder="e.g. Matriculation">
+        </div>
+
+        <div id="questions">
+        <h2 class="qSec">Experience</h2>
+            <h3>enter your institute:</h3>
+            <input type="text" id="company" placeholder="e.g. Microsoft">
+            <h3>enter your role:</h3>
+            <input type="text" id="role" placeholder="e.g. Software Dev">
+        </div>
+        
+        <div id="questions">
+        <h2 class="qSec">Skills</h2>
+        <h3>enter your skills:</h3>
+        <input type="text" id="skills" placeholder="e.g. JavaScript e.t.c">
+        </div>
+
+        <div id="questions">
+        <h2 class="qSec">Projects</h2>
+        <h3>enter your projects:</h3>
+        <input type="text" id="projects" placeholder="e.g. Amazon Clone e.t.c"> 
+        </div>
+
+        <button id="submitButton">Submit</button>
+
+    </div>
+
+    <div id="output" style="display: none;">
+        <p class="mainHeading">resume builder</p>
+
+        <h2 class="qSec">personal inofrmation</h2>
+        <div id="outputPhoto"></div>
+        <div id="questions">
+
+            <h3 id="outputName"></h3>
+
+            <a href="mailto:"><h3 id="outputEmail" ></h3></a>
+
+            <h3 id="outputPhone"></h3>
+        </div>
+
+        <h2 class="qSec">education</h2>
+        <div id="questions">
+        <h3 id="outputSchool"></h3>
+            <h3 id="outputDegree"></h3>
+        </div>
+
+        <div id="questions">
+        <h2 class="qSec">experience</h2>
+            <h3 id="outputCompany"></h3>
+            <h3 id="outputRole"></h3>
+        </div>
+        
+        <div id="questions">
+        <h2 class="qSec">skills</h2>
+        <h3 id="outputSkills"></h3>
+        </div>
+
+        <div id="questions">
+        <h2 class="qSec">projects</h2>
+        <h3 id="outputProjects"></h3>
+        </div>
+
+        <button id="editBtn">edit</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
